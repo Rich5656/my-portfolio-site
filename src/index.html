@@ -86,96 +86,9 @@
           </div>
         </div>
       </div>
-
-
-      <!-- <div class="display-box">
-        <div class="card">
-          <h1>Thank You!</h1>
-          <p>I know you are very busy, so thanks for taking some time out of your day to take a look at my portfolio.</p>
-          <p class="hero-cta load-hidden about-btn">
-            <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">About me</a>
-          </p>
-        </div>
-      </div>
-      <div class="display-box">
-        <div class="card">
-          <h1>Skills</h1>
-          <div class="skills">
-            <p>Javascript: React, Node, Express</p>
-            <p>HTML, CSS, SASS</p>
-            <p>Python: Pandas, Streamlit</p>
-          </div>
-        </div>
-      </div>
-      <div class="display-box">
-        <div class="card">
-          <h1>Project: Related Artist Highlight</h1>
-        </div>
-      </div>
-      <div class="display-box">
-        <div class="card"></div>
-      </div>
-      <div class="display-box project-display">
-        <div class="project-title">
-          <h1>Project: Related Artist Highlight</h1>
-        </div>
-      </div>
-      <div class="display-box project-display">
-        <h1 class="project-title">Project: Nutrition Tracker</h1>
-      </div> -->
       
      
     </section>
-    <!-- /END Hero Section -->
-
-    <!-- **** About Section **** -->
-    <!-- <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                I am a problem solver who has continuously proven my value to my employers by developing web applications and code-dirven 
-                solutions to business problems. Wether it is automating reptetive internal business processes or creating an interactive web
-                application, I love the unique challenge that each obstacle provides and the opportunity to use technology to make our
-                lives more effecient.
-              </p>
-              <p class="about-wrapper__info-text">
-                I am looking to be a part of team with extensive experience in Software Engineering, one that will challenge me to grow
-                my knowledge and skills further, while also providing the mentorship to help me take the next steps in my career. 
-              </p>
-              <p class="about-wrapper__info-text">
-                When I am not coding or working on projects, I like to spend my time reading fiction, writing, playing tennis, or watching sports.
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- /END About Section -->
 
     <!-- **** Projects Section **** -->
     <section id="projects">
@@ -356,17 +269,35 @@
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title contact-title">Think I'd be a good fit on the team?</h2>
+        <h2 class="section-title contact-title contact-header">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <!-- <p class="contact-wrapper__text">[Put your call to action here]</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:example@email.com"
             >Call to Action</a
-          >
-        </div>
+          > -->
+          <form name="contact" id="contact-form" method="POST" data-netlify="true">
+            <p>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+            </p>
+            <p>
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div> 
       </div>
     </section>
     <!-- /END Contact Section -->
@@ -393,9 +324,9 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
+          © 2023 by
           <a rel="noreferrer" href="https://github.com/cobidev" target="_blank"
-            >Jacobo Martínez</a
+            >Richard Lowther</a
           >
         </p>
 
