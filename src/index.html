@@ -40,13 +40,20 @@
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top">
-      <h1>Richard Lowther</h1>
-    <ul class="nav-icons">
-      <li class="nav-icon">github</li>
-      <li class="nav-icon">linkedin</li>
-    </ul>
-    </div>
+    <nav id="top" class="nav-bar">
+      <div class="nav-my-name">Richard Lowther</div>
+      <a class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
@@ -57,31 +64,26 @@
           Whether it is automating repetitive tasks for my employer, creating a web application to help make business decisions
           more clear and trackable, or simply working on a personal project, I'm always excited to dive into the weeds of the problem
           and figure out how I can make my solution easy to understand for the end user.
-          <br />
+          <br/>
           <br/>
           Thank you for taking some time to look at my portfolio!
         </p>
-        <!-- <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">About me</a >
-        </p> -->
         <br/>
         <div class="hero-title load-hidden skills-section">
-          <h2 class="skills-heading">
+          <div class="skills-heading">
             Skills
             <br/>
             <br/>
-            <hr/>
-          </h2>
+            <hr>
+          </div>
           <div class="skills-list-container">
             <ul class="skills-list"> 
               <li><span class="text-emphasis">Javascript:</span> React.js, Node.js, Express.js</li>
-              <li><span class="text-emphasis">SQL/No SQL:</span> PostgreSQL, MongoDB</li>
+              <li><span class="text-emphasis">SQL/No SQL:</span> PostgreSQL</li>
               <li><span class="text-emphasis">Pyhton:</span> Pandas, Streamlit</li>
               <li><span class="text-emphasis">Genreal:</span> OOP, HTML, CSS, SASS, Bootstrap</li>
-
             </ul>
           </div>
-
         </div>
       </div>
 
