@@ -57,6 +57,10 @@
   }
 }
 
+.social-links a i {
+  color: $main-text-color;
+}
+
 .back-to-top i {
   color: $white-color;
   margin: 1rem 0 $default-font-size;
@@ -83,14 +87,15 @@
 
 #contact-form {
   padding: 10px;
-  width: 70%;
+  width: 50%;
   background-color: $primary-color;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
   display: block;
   p {
+    color: $main-text-color;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 2rem;
 
     button {
       width: 20rem;
@@ -106,6 +111,7 @@
   input, textarea {
     border-radius: 20px;
     padding: 5px;
+    width: 80%;
   }
 
   label {
@@ -113,7 +119,16 @@
     display: block;
   }
 
-  @media (max-width: 777px) {
+  @media (max-width: 950px) {
+    & {
+      width: 70%
+    }
+  }
+
+  @media (max-width: 766px) {
+    & {
+      width: 95%;
+    }
     input, textarea {
       width: 90%;
     }
