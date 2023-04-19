@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -17,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>Richard | React Developer</title>
+    <title>Richard | Software Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <!-- <meta name="keywords" content="Richard Lowther, Javascript, React.js, React, " /> -->
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="Richard | Software Developer" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
+
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
     <nav class="nav-bar">
@@ -68,8 +53,7 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <p class="hero-title load-hidden">
-          <!-- Hi, my name is <span class="text-color-main">Richard</span> -->
-          I'm a <span class="text-emphasis">Software Developer</span> who has a passion for solving problems in a way that is practical and useful to ordinary people.
+          I'm a <span class="text-emphasis">Software Developer</span> who has a passion for solving problems in a way that is practical and useful to end users.
           Whether it is automating repetitive tasks for my employer, creating a web application to help make business decisions
           more clear and trackable, or simply working on a personal project, I'm always excited to dive into the weeds of the problem
           and figure out how I can make my solution easy to understand for the end user.
@@ -88,7 +72,7 @@
           <div class="skills-list-container">
             <ul class="skills-list"> 
               <li><span class="text-emphasis">Javascript:</span> React.js, Node.js, Express.js</li>
-              <li><span class="text-emphasis">SQL/No SQL:</span> PostgreSQL</li>
+              <li><span class="text-emphasis">Database:</span> PostgreSQL</li>
               <li><span class="text-emphasis">Pyhton:</span> Pandas, Streamlit</li>
               <li><span class="text-emphasis">Genreal:</span> OOP, HTML, CSS, SASS, Bootstrap</li>
             </ul>
@@ -103,17 +87,17 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 1 -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Related Artists Higlights</h3>
                 <div>
                   <p class="mb-4">
-                    I built this React app to help me search out lesser-known artists on Spotify. I love music and I am always looking
-                    for a new band to obsess over, and this is my solution to that need. It allows a user to log in with their Spotify
+                    I built this app to help me search out lesser-known artists on Spotify. I love music and I am always looking
+                    for a new band to obsess over, and this is my solution to that problem. It allows a user to log in with their Spotify
                     account and then provides some auto-generated reccomendations based on their top artists. There is also search
-                    functionality to get three lesser-known artists related to the search.
+                    functionality to get three lesser-known artists who are related to the search.
                   </p>
                   <p class="mb-4">
                     Tech Used: React.js, Express.js, Spoify API, Bootstrap
@@ -148,9 +132,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Related Artist Higlight Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/related-artist-highlight-snapshot.png"
                     />
                   </div>
                 </a>
@@ -159,20 +143,21 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 2 -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Nutrition Tracker</h3>
                 <div>
                   <p class="mb-4">
-                    In this React app I implemented a way to track daily caloric consumption by allowing usersto calculate their needed calories for the day
-                    and then adding the amount of food that they have consumed. I used this as an opportunity to create site features that allow a user's actions to trigger API reuqests
-                    to get the data needed for the display. I also explored the use of the React's Context API for managing global state and using it to access/update that state from
+                    This app allows users to calculate their needed calories for the day, search and add the amount of food that they have consumed so far,
+                    and track calories burned form exercise. All of this data is presented in a table to let the user know where they are with their nutrition for the day.
+                    I used this as an opportunity to create site features that allow a user's actions to trigger API reuqests
+                    and also explored React's Context API for managing global state that can be accessed/updated from
                     any component in the application.
                   </p>
                   <p>
-                    Tech Used: React.js, Context API, USDA API, Bootstrap
+                    Tech Used: React.js, Context API, USDA API
                   </p>
                 </div>
                 <a
@@ -204,63 +189,9 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Nutrition App Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/nutrition-app-snapshot.png"
                     />
                   </div>
                 </a>
