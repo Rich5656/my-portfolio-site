@@ -39,25 +39,31 @@
       padding: 0;
       display: flex;
   
-      li {
-        list-style: none;
-        cursor: pointer;
-        margin-left: 20px;
-  
-        a i {
-        //   text-decoration: none;
-          color: $main-text-color;
-          font-size: xx-large;
-          
-        //   padding: 1rem;
-        //   font-family: 'Times New Roman', Times, serif;
-        //   font-size: x-large;
-  
-          &:hover {
-            color: #69c4eb;
-          }
+        li {
+            list-style: none;
+            cursor: pointer;
+            margin-left: 20px;
+
+            a {
+                color: $main-text-color;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: larger;
+
+                &:hover {
+                    color: #69c4eb;
+                }
+
+                i {
+                    //   text-decoration: none;
+                    color: $main-text-color;
+                    font-size: xx-large;
+                    
+                    &:hover {
+                        color: #69c4eb;
+                    }
+                }
+            }
         }
-      }
     }
   
     @media (max-width: 875px) {
